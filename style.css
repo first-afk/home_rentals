@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
@@ -8,12 +7,9 @@ body{
 }
 header{
     background-image: url(list-of-properties/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash\ \(1\).jpg);
-    height: 500px;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    top: 0px;
-    right: 0px;
 }
 h1{
     /* position: absolute; */
@@ -79,7 +75,8 @@ h3{
 
 #table{
     border-collapse: collapse;
-    width: 6.65cm;
+    width: 100%;
+    max-width: 6.65cm;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -122,21 +119,32 @@ td{
 }
 
 .minimum-icon{
-    /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: left;
+    justify-content: left;
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
+}
+
+.mini-img{
+    width: 15rem;
+    height: 30em;
+    padding-bottom: 30px;
 }
 p.logobox{
     text-align: left;
     justify-content: left;
     line-height: 15px;
     font-weight: 600;
+    font-size: 1.1rem;
     text-transform: capitalize;
+}
+.l-icon{
+    padding-right: 15px;
 }
 .logobox img{
     box-sizing: border-box;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     padding: 10px;
     height: 50px;
 }
@@ -151,11 +159,11 @@ p.logobox{
     padding: 30px;
 }
 
-#listimg{
+/* #listimg{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-}
+} */
 
 a {
     text-decoration: none;
@@ -182,18 +190,24 @@ a:hover {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 250px;;
+    max-width: 250px;
     text-align: left;
     border-radius: 4%;
     box-sizing: border-box;
     height: 360px;
-    margin: 15px;
+    margin: 5px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
 }
 
 #listheading{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 2rem 0;
 }
   
 .title {
@@ -334,6 +348,10 @@ textarea {
     margin: 10px;
 }
 
+.fieldset{
+    border: none;
+}
+
 form #btndiv{
     text-align: center;
     padding: 20px;
@@ -343,6 +361,21 @@ form #btndiv{
     width: 30%;
 }
 
+input[type="file"]{
+    display: none;
+}
+.image-display{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.upload-button{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    padding: 0px;
+    cursor: pointer;
+}
 #third{
     display: flex;
     flex-direction: column;
